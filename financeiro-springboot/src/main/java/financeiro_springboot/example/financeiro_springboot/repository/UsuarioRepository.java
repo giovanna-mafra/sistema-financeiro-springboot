@@ -4,5 +4,9 @@ import financeiro_springboot.example.financeiro_springboot.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface UsuarioRepository extends JpaRepository<Usuario, Integer> {
+    Usuario findByEmail(String email);
+    Usuario findByNome(String nome);
+
+
 
 }
